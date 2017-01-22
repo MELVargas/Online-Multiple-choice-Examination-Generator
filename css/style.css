@@ -1,0 +1,342 @@
+body {
+/*    background:
+    linear-gradient(
+      rgba(144, 153, 130, 0.45), 
+      rgba(144, 153, 130, 0.45)
+    ),
+    /* bottom, image 
+   	url("../resources/bgb.jpg");*/
+	background-image:url("../resources/bgb.jpg");
+	background-size: 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family:Courier;
+	margin-bottom: 4em;
+	margin-bottom: 4em;
+}
+/*
+#header
+{
+	background-color: transparent;
+	background: transparent;
+	border-color: transparent;
+	border-bottom-color: white;
+	margin-top: 1em;
+}
+*/
+
+
+#top-header{
+	background-color: #403f3f;
+	height:1.5em;
+}
+
+#header
+{
+	background-color:rgba(64,63,63,0.5);
+	border-color: transparent;
+	height: 4em;
+}
+
+#header div
+{
+
+  margin-top: 0.3em;
+	
+}
+
+#footer
+{
+	background-color: #403f3f;
+	color: white;
+	border-color: transparent;
+	padding-right: 2em;
+	height: 3em;
+	
+}
+
+#footer div{
+	margin-top: -0.2em;
+	
+}
+
+#logo{
+	
+	margin-top: -1.3em;
+}
+
+#upload-files
+{
+	max-width: 50%;
+	
+	padding: 4em;
+	margin: auto;
+	background: #78C0A8;
+	opacity: 0.9;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: white !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+   text-decoration: underline;
+
+}
+/*
+ul.nav li.active a {
+    color: white !important;
+}
+*/
+.navbar-nav > li > .dropdown-menu { 
+	background-color:rgba(64,63,63,0.5);
+ 
+	/*dropdown*/
+}
+
+.navbar-default .navbar-nav .dropdown.open a:focus {
+    background-color:rgba(64,63,63,1);
+	
+	/*active nav*/
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    /*background-color:rgba(64,63,63,0.5);
+	
+	hover nav*/
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: rgba(64,63,63,1);
+    background-image: none;
+}
+
+.navbar-brand
+{
+	
+}
+
+/*START table - FILES*/
+#files, #eval
+{
+	margin: 0 auto;
+	width: 90%;
+	background: rgba(252,235,182,0.95);
+	font-weight:500;
+	color:black;
+	
+}
+
+#result
+{
+	margin: 0 auto;
+	width: 90%;
+	background: rgba(255,255,255,0.95);
+	font-weight:500;
+	color:black;
+	
+}
+
+#add-view
+{
+	margin: 0 auto;
+	width: 60%;
+	background: rgba(252,235,182,0.95);
+	padding: 1.5em;
+}
+
+#files th, #files td, #eval th, #result th, #result td
+{
+	padding: 3px;
+	text-align: center;
+	vertical-align: middle;
+}
+/*END table - FILES*/
+
+.login-modal .login-modal-dialog 
+{ 
+	width: 300px; 
+}
+
+.modal-content-login
+{ 
+	background: #78C0A8;
+	
+}
+
+.modal-content-register
+{ 
+	background: #FCEBB6;
+	
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal-loading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url("../resources/ajax-loader.gif") 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+.chk, .edt
+{
+    display:inline-block;
+    width:5em;
+    height:5em;
+    padding:2px;
+    cursor:pointer;	
+}
+
+.chk[unchecked]{
+    background-image:url("../resources/x.png");
+	background-size: 5em 5em;
+
+}
+
+.edt[unchecked]{
+    background-image:url("../resources/edit.png");
+	background-size: 5em 5em;
+
+}
+.modal-checkbox
+{
+    display:none;
+}
+
+#search{
+	margin-top: -0em;
+}
+
+#reviewModal div, #examModal div, #testModal div{
+	width: 80%; /* respsonsive width */
+    /*margin-left:-40%; /* width/2) */ 
+	
+}
+
+#scoreModal div{
+	width: 60%;
+	
+}
+
+#reviewModal div div, #examModal div div, #testModal div div, #scoreModal div div {
+	width: 100%;
+	
+}
+
+.eval-radio{
+	width:1.5em;
+	height:1.5em;	
+}
+
+.tab-center{
+	text-align: center;
+	width: 6em;
+	height: 1em;
+}
+
+.action{
+	width: 18em;
+}
+
+.e-action{
+	width: 25em;
+	
+}
+
+.likert0{
+	
+	background-color: #D12F19;
+}
+
+.likert1{
+	background-color: #ED585A;
+	
+}
+
+.likert2{
+	background-color: #F0797A;
+	
+}
+
+.likert3{
+	background-color:#9BB4CE;
+	
+}
+
+.likert4{
+	background-color: #88DEB7;
+	
+}
+
+.likert5{
+	background-color: #6BD6A6;
+	
+}
+
+.likert6{
+	background-color: #4FC283;
+	
+}
+
+.radio_item{
+display: none !important;
+}
+
+.label_item {
+	background-image:url("../resources/sad.png");
+	background-size: 5em 5em;
+	width:100%;
+	height:5em;
+	opacity: 0.1;
+}	
+
+.radio_item:checked + label {
+	
+	background-image:url("../resources/happy.png");
+opacity: 1;
+}
+
+label {
+cursor: pointer;   
+}
+
+.highchart-div{
+    width: 50%; 
+	margin: auto; 
+	text-align: center;
+	vertical-align: middle;
+}​
+
+#spcm1{
+	max-width: 80%;
+	
+	padding: 4em;
+	margin: auto;
+	margin-top: 7em;
+	background: rgba(120, 192, 168, 0.95);
+	opacity: 0.9;
+	
+}
